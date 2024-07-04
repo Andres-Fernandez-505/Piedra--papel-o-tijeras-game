@@ -1,0 +1,127 @@
+
+/* Tema claro */
+:root {
+    --color-primary: #007bff;
+    --color-text: #1c1e21;
+}   
+
+.light-theme {
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    color: var(--color-text);
+}
+
+/* Tema oscuro */
+.dark-theme {
+    background:linear-gradient(to right, #434343 0%, black 100%);  
+    color: #f8f9fa;     
+}
+
+/* Tema azul */
+.blue-theme {
+    background: linear-gradient( 93.2deg,  rgba(24,95,246,1) 14.4%, rgba(27,69,166,1) 90.8% );
+    color: #dcf2ff;
+}
+
+/* Tema verde */
+.green-theme {
+    background: #e8f5e9;
+    color: #1b5e20;
+}
+
+body {
+    transition: background 0.5s, color 0.5s;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Opcional para centrar verticalmente */
+}
+
+.rondas {
+    display:flex;
+    flex-direction: column; /* Cambiar la dirección del flujo a columna */
+    justify-content: center;
+    align-items: center; /* Opcional para centrar verticalmente */
+}
+
+.img-inicio{
+    text-align: center;
+    width: 100%; /* Ancho del bloque en porcentaje */
+    height: 300px;
+}
+img { 
+    width: 200px; /* Ancho de la imagen en píxeles */
+    height: 200px; /* Altura de la imagen en píxeles */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#toggleTheme {
+    position: fixed;
+    bottom: 20px; /* Espacio desde la parte inferior */
+    left: 20px; /* Espacio desde la parte derecha */
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#toggleTheme {
+    position: fixed;
+    bottom: 20px; /* Espacio desde la parte inferior */
+    left: 20px; /* Espacio desde la parte izquierda */
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleTheme:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    color: var(--color-text); /* Cambia el color de fondo al pasar el ratón */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+#themeSelector {
+    position: fixed;
+    background-image: linear-gradient(to right, #E0EAFC 0%, #CFDEF3  50%, #2671da 50%, #0567f0  100%);
+    margin: 10px;     
+    text-align: left;
+    text-transform: normal;
+    transition: background-positions 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease; 
+    background-size: 200% auto;
+    color: rgb(31, 31, 31);            
+    box-shadow: 0 0 2px #202020;
+    border: none;
+    display: block;
+    bottom: 20px; /* Espacio desde la parte inferior */
+    left: 20px; /* Espacio desde la parte izquierda */
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#themeSelector:hover {
+    background-position: right center; /* Cambia la posición del fondo al pasar el ratón */
+    box-shadow: 0 0 5px #202020; /* Aumenta la sombra del cuadro */
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+    transition: color 0.5s;
+    color: #030303;
+}
+
