@@ -1,37 +1,126 @@
-
-/* Tema claro */
 :root {
     --color-primary: #007bff;
     --color-text: #1c1e21;
 }   
 
+/* Tema claro */
 .light-theme {
     background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     color: var(--color-text);
+
+     #iniciar {
+        background-image: linear-gradient(to left, #f6f7fa  40%, #dddddd 100%);
+        text-align: center;
+        text-transform: normal;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: #000000;            
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 10px 20px; 
+        font-size: 15px;
+        width: 120px;
+        display: block;  /* Necesario para que margin: auto; funcione correctamente */
+        margin: 15px auto; /* Centra horizontalmente */
+        
+    }
+    
+    #iniciar:hover {
+    background-position: right center;  
+    color: #434343;
+    text-decoration: none;
+    }
 }
 
 /* Tema oscuro */
 .dark-theme {
-    background:linear-gradient(to right, #434343 0%, black 100%);  
-    color: #f8f9fa;     
+    background:  #232323  ;  
+    color: #f8f9fa;  
+    
+    #iniciar {
+        background-image: linear-gradient(to left, #1f1f1f  20%, #e3e3e3 100%);
+        text-align: center;
+        text-transform: normal;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: #2c2c2c;            
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 10px 20px; 
+        font-size: 15px;
+        width: 120px;
+        display: block;  /* Necesario para que margin: auto; funcione correctamente */
+        margin: 15px auto; /* Centra horizontalmente */
+        
+    }
+    
+    #iniciar:hover {
+    background-position: right center;  
+    color: #e8f5e9;
+    text-decoration: none;
+    }
 }
 
 /* Tema azul */
 .blue-theme {
-    background: linear-gradient( 93.2deg,  rgba(24,95,246,1) 14.4%, rgba(27,69,166,1) 90.8% );
+    background: linear-gradient( 93.2deg,  #0c38c7 14.4%, #0826a7 90.8% );
     color: #dcf2ff;
+    #iniciar {
+        background-image: linear-gradient(to left, #3b8eed 20%,  #0c358a 100%);
+        text-align: center;
+        text-transform: normal;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: #cef1fc;            
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 10px 20px; 
+        font-size: 15px;
+        width: 120px;
+        display: block;  /* Necesario para que margin: auto; funcione correctamente */
+        margin: 15px auto; /* Centra horizontalmente */
+        
+    }
+    
+    #iniciar:hover {
+    background-position: right center;  
+    color:#dcf2ff ;
+    text-decoration: none;
+    }
 }
 
 /* Tema verde */
 .green-theme {
-    background: #e8f5e9;
-    color: #1b5e20;
+    background: #77dd77;
+    color: #007111;
+
+    #iniciar {
+        background-image: linear-gradient(to left, #8ae287 20%,  #2d8f2f 100%);
+        text-align: center;
+        text-transform: normal;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color:#cff6c8 ;            
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 10px 20px; 
+        font-size: 15px;
+        width: 120px;
+        display: block;  /* Necesario para que margin: auto; funcione correctamente */
+        margin: 15px auto; /* Centra horizontalmente */
+        
+    }
+    
+    #iniciar:hover {
+    background-position: right center;  
+    color:#007111 ;
+    text-decoration: none;
+    }
 }
 
 body {
     transition: background 0.5s, color 0.5s;
 }
-
 
 h1 {
     display: flex;
@@ -64,6 +153,9 @@ footer {
     text-align: center;
 }
 
+
+/* Botón Para cambiar tema */
+
 #toggleTheme {
     position: fixed;
     bottom: 20px; /* Espacio desde la parte inferior */
@@ -76,18 +168,6 @@ footer {
     cursor: pointer;
 }
 
-
-#toggleTheme {
-    position: fixed;
-    bottom: 20px; /* Espacio desde la parte inferior */
-    left: 20px; /* Espacio desde la parte izquierda */
-    padding: 10px 20px;
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 #toggleTheme:hover {
     transform: scale(1.1); /* Aumenta el tamaño del botón */
@@ -124,4 +204,3 @@ footer {
     transition: color 0.5s;
     color: #030303;
 }
-
